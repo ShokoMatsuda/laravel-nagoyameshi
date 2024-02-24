@@ -21,11 +21,10 @@ return new class extends Migration
             $table->string('postal_code');
             $table->string('address');
             $table->string('phone_number');
-            $table->data('birthday')->nullable();
+            $table->date('birthday')->nullable();
             $table->string('occupation')->nullable();
             $table->rememberToken('remember_token');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamps();
         });
     }
 
